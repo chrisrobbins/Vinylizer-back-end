@@ -89,16 +89,7 @@ text-align: left;
    box-shadow: 1px #fffaf0;
    cursor: pointer;
    }
-   .collection div:hover, .search-results div:hover {
-     font-family: "Open Sans", sans-serif;
-     font-weight: 600;
-     font-size: 24px;
-     color: #f1eada;
-     background-color: rgba(239,90,52,0.9);
-     border-radius: 3px;
-     border: 1px solid #ef5a34;
-     box-shadow: 1px;
-   }
+
 
 
 .collection div img, .search-results div img {
@@ -135,6 +126,13 @@ text-align: left;
   background-color:  #ebf2f5;
   color: #0e181a;
 }
-.container {
-  max-width: 1500px;
+.collection div:hover, .search-results div:hover {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #f1eada;
+  background-color: rgba(239,90,52,0.9);
+  border-radius: 3px;
+  border: 1px solid #ef5a34;
+  box-shadow: 1px;
 }

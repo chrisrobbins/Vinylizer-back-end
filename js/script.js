@@ -1,7 +1,9 @@
+var BASE_URL='https://vinylcollectionbackend.herokuapp.com/'
+
 $(document).ready(function() {
+
     loadAlbums()
   //hover state
-
   deleteAlbum()
   searchDiscogs()
   addAlbum()
@@ -27,7 +29,7 @@ function searchDiscogs() {
         a.hover(function() {
 
         })      
-        a.attr('href','http://localhost:3000/albums/');   
+        a.attr('href',BASE_URL + 'albums/');   
         a.data('artist', data.results[i].artist);
         a.data('album', data.results[i].title);
         a.data('year', data.results[i].year);
@@ -80,7 +82,7 @@ function searchLibrary() {
 function loadAlbums() {
   $('.collection').empty()
   $.ajax({
-    url: 'http://localhost:3000/albums/',
+    url: BASE_URL + 'albums/',
    method: 'GET'
   }).done(function(albums) {
     albums.forEach(function(albums) {
@@ -95,7 +97,7 @@ function loadAlbum(album) {
   var div = $('<div></div>');
     div.html('<img src="' + album.art + '" />' + ' ' + album.album + ' ' + album.artist + ' ' + album.year + '  ');
     var a = $('<a><span class="icon-trash2"></span></a>');      
-    a.attr('href','http://localhost:3000/albums/' + album._id);     a.addClass('deleteAlbum');    
+    a.attr('href',BASE_URL + 'albums/' + album._id);     a.addClass('deleteAlbum');    
     div.append(a);    
      $('.collection').append(div);
   //    div.addClass("cards");

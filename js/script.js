@@ -89,7 +89,7 @@ function loadAlbums() {
     url: BASE_URL + 'albums/',
    method: 'GET'
   }).done(function(albums) {
-    albums.reverse().forEach(function(albums) {
+    albums.forEach(function(albums) {
       loadAlbum(albums)
  // console.log(albums);
     })
@@ -106,7 +106,7 @@ function loadAlbum(album) {
     var a = $('<a><span class="icon-trash2"></span></a>');      
     a.attr('href',BASE_URL + 'albums/' + album._id);     a.addClass('deleteAlbum');    
     div.append(a);    
-     $('.collection').append(div);
+     $('.collection').prepend(div);
   //    div.addClass("cards");
   //    $('.cards').hover(function() {
   //    $(this).css({"font-family": "Open Sans, sans-serif", "font-weight": "600", "font-size": "24px", "color": "#f1eada", "background-color": "rgba(239,90,52,0.95)", "border-radius": "3px", "border": "1px solid #ef5a34","box-shadow": "1px", "z-index": "99" });

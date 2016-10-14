@@ -10,7 +10,6 @@ $(document).ready(function() {
 
 //Search Discogs for albums
 function searchDiscogs() {
-  $('.search-results').empty()
   $('.discogs-form').on('submit', function(e) {
     e.preventDefault();
     $('h3.one').show();

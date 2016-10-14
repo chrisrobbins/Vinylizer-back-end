@@ -27,6 +27,7 @@ function searchDiscogs() {
         var p = $('<p></p>');
         div.html('<img src="' + data.results[i].thumb + '" />');
         p.html(data.results[i].title);
+        div.append(p);
         var a = $('<a><span class="icon-plus2"></span></a>');
         a.hover(function() {
 
@@ -37,8 +38,7 @@ function searchDiscogs() {
         a.data('year', data.results[i].year);
         a.data('art', data.results[i].thumb);
         a.addClass('addAlbum');    
-        div.append(a);   
-        div.append(p); 
+        div.append(a);    
          $('.search-results').append(div);
       //make them clickable
       //add to database/local library
@@ -98,7 +98,10 @@ function loadAlbums() {
 function loadAlbum(album) {
   // console.log(album.album + ' ' + album.artist + ' ' + album.year);
   var div = $('<div></div>');
-    div.html('<img src="' + album.art + '" />' + ' ' + album.album + ' ' + album.artist + ' ' + album.year + '  ');
+  var p = $('<p></p>');
+    div.html('<img src="' + album.art + '" />');
+    p.html(+ ' ' + album.album + ' ' + album.artist + ' ' + album.year)
+    div.append(p);
     var a = $('<a><span class="icon-trash2"></span></a>');      
     a.attr('href',BASE_URL + 'albums/' + album._id);     a.addClass('deleteAlbum');    
     div.append(a);    

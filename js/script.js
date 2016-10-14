@@ -25,19 +25,18 @@ function searchDiscogs() {
       for (var i = 0; i < data.results.length; i++) {
         var div = $('<div></div>');
         var p = $('<p></p>');
-        var newFirst = data.results[i].reverse();
-        div.html('<img src="' + newFirst.thumb + '" />');
-        p.html(newFirst.title);
+        div.html('<img src="' + data.results[i].thumb + '" />');
+        p.html(data.results[i].title);
         div.append(p);
         var a = $('<a><span class="icon-plus2"></span></a>');
         a.hover(function() {
 
         })      
         a.attr('href',BASE_URL + 'albums/');   
-        a.data('artist', newFirst.artist);
-        a.data('album', newFirst.title);
-        a.data('year', newFirst.year);
-        a.data('art', newFirst.thumb);
+        a.data('artist', data.results[i].artist);
+        a.data('album', data.results[i].title);
+        a.data('year', data.results[i].year);
+        a.data('art', data.results[i].thumb);
         a.addClass('addAlbum');    
         div.append(a);    
          $('.search-results').append(div);
@@ -89,7 +88,7 @@ function loadAlbums() {
     url: BASE_URL + 'albums/',
    method: 'GET'
   }).done(function(albums) {
-    albums.forEach(function(albums) {
+    albums.reverse().forEach(function(albums) {
       loadAlbum(albums)
  // console.log(albums);
     })

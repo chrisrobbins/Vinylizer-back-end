@@ -112,9 +112,9 @@ text-align: left;
   text-align: center;
   display: block;
   margin: 0 auto;
-  clear: right;
-  padding-top: 30px;
-  color: color: #f1eada;
+  padding: 30px;
+  color:#f1eada;
+  font-size: 15px;
 }
 .collection div a, .search-results div a {
   display: block;

@@ -82,7 +82,7 @@ text-align: left;
    vertical-align: top;
    font-family: 'Open Sans', sans-serif;
    font-size: 15px;
-   color: #262e25;
+   color: #fffaf0;
    background-color: #fffaf0;
    border-radius: 3px;
    border: 1px solid #fffaf0;
@@ -112,9 +112,9 @@ text-align: left;
   text-align: center;
   display: block;
   margin: 0 auto;
-  padding: 30px;
+  padding: 50px;
   color:#f1eada;
-  font-size: 15px;
+  font-size: 18px;
 }
 .collection div a, .search-results div a {
   display: block;

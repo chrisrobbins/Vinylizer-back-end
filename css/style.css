@@ -113,18 +113,21 @@ text-align: left;
   display: block;
   margin: 0 auto;
   padding: 50px;
-  color:#f1eada;
+  color:#6aafa0;
   font-size: 18px;
 }
 .collection div a, .search-results div a {
   display: block;
   margin: 0 auto;
   clear: right;
-  padding-top: 40px;
-  color: #f1eada;
+  font-size: 20px;
+  padding-top: 15px;
+  color: #6aafa0;
 
 }
-
+.collection div a:hover, .search-results div a:hover{
+  font-size: 28px;
+}
 
 .collection {
   display: block;

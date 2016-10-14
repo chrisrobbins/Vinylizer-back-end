@@ -10,6 +10,7 @@ $(document).ready(function() {
 
 //Search Discogs for albums
 function searchDiscogs() {
+  $('.search-results').empty()
   $('.discogs-form').on('submit', function(e) {
     e.preventDefault();
     $('h3.one').show();
@@ -47,7 +48,6 @@ function searchDiscogs() {
 
 //add album to library
 function addAlbum() {
-  $('.search-results').empty()
   $(document).on('click', 'a.addAlbum', function(e) {
      e.preventDefault()
      var link = $(this)

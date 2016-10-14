@@ -19,9 +19,10 @@ function searchDiscogs() {
       url:'https://api.discogs.com/database/search?artist=' + apiSearch + '&key=jbUTpFhLTiyyHgLRoBgq&secret=LSQDaLpplgcCGlkzujkHyUkxImNlWVoI',
       method: 'GET',
     }).done(function(data) {
-      $('.discogs-input').val(' ').focus()
+      $('.discogs-input').val('').focus()
       // console.log(data.results[10]);
       //populate list of bands w/ albums
+      $('.search-results').html('')
       for (var i = 0; i < data.results.length; i++) {
         var div = $('<div></div>');
         var p = $('<p></p>');

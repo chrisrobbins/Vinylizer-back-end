@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  margin: 0 auto;
+  background: #252c2e;
+}
+header {
+  background-color: #0e181a;
+  padding: 0;
+  margin: 0;
+  height: 200px;
+}
+.discogs-input {
+  padding: 25px 30px 25px 30px;
+  width: 640px;
+  background-color: #fffaf0;
+  font-size: 24px;
+  margin-top: 25px;
+}
+.search {
+  position: relative;
+ }
+.search input {
+  text-indent: 5px;
+}
+.search .icon-magnifier {
+  color: #0e181a;
+  font-size: 32px;
+  font-weight: 600;
+  position: absolute;
+  right: 310px;
+  top: 53px;
+}
+a {
+  text-decoration: none;
+}
+.discogs-input::-webkit-input-placeholder {
+  font-family: 'Open Sans', 600;
+  font-size: 24px;
+  color: #252d2e;
+}
+ h1 {
+  font-size: 80px;
+  padding-top: 45px;
+  font-family: 'Allan', cursive;
+  color: #f1eada;
+}
+ h2 {
+  font-size: 40px;
+  color: #f1eada;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 100px;
+}
+.discogs-form {
+  height: 300px;
+}
+h3 {
+font-family: 'Open Sans', sans-serif;
+font-style: italic;
+font-weight: 600;
+font-size: 30px;
+color: #f1eada;
+text-align: left;
+}
+.icon-plus2{
+  color:#f1eada;
+}
+.collection div, .search-results div {
+   height: 400px;
+   width: 30.5%;
+   display: inline-block;
+   margin: 10px;
+   text-align: center;
+   box-sizing: border-box;
+   vertical-align: top;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 15px;
+   color: #262e25;
+   background-color: #fffaf0;
+   border-radius: 3px;
+   border: 1px solid #fffaf0;
+   box-shadow: 1px #fffaf0;
+   cursor: pointer;
+   }
+   .collection div:hover, .search-results div:hover {
+     font-family: "Open Sans", sans-serif;
+     font-weight: 600;
+     font-size: 24px;
+     color: #f1eada;
+     background-color: rgba(239,90,52,0.9);
+     border-radius: 3px;
+     border: 1px solid #ef5a34;
+     box-shadow: 1px;
+   }
+
+
+.collection div img, .search-results div img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 45px;
+  clear: right;
+
+}
+.collection div p, .search-results div p {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  clear: right;
+  padding-top: 30px;
+  color: color: #f1eada;
+}
+.collection div a, .search-results div a {
+  display: block;
+  margin: 0 auto;
+  clear: right;
+  padding-top: 40px;
+  color: #f1eada;
+
+}
+
+
+.collection {
+  display: block;
+  margin-top: 10px;
+  background-color:  #ebf2f5;
+  color: #0e181a;
+}
+.container {
+  max-width: 1500px;
+}

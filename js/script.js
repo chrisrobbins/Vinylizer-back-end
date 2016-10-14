@@ -27,7 +27,7 @@ function searchDiscogs() {
         var div = $('<div></div>');
         var p = $('<p></p>');
         div.html('<img src="' + data.results[i].thumb + '" />');
-        p.html(data.results[i].title)
+        p.html(data.results[i].title);
         var a = $('<a><span class="icon-plus2"></span></a>');
         a.hover(function() {
 

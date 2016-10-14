@@ -124,6 +124,13 @@ text-align: left;
   color: #f1eada;
 
 }
+p {
+  margin-top: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #262e25;
+
+}
 
 
 .collection {

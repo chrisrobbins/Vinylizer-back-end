@@ -25,7 +25,9 @@ function searchDiscogs() {
       //populate list of bands w/ albums
       for (var i = 0; i < data.results.length; i++) {
         var div = $('<div></div>');
-        div.html('<img src="' + data.results[i].thumb + '" />' + '<p>" '+data.results[i].title+'" </p>');
+        var p = $('<p></p>');
+        div.html('<img src="' + data.results[i].thumb + '" />');
+        p.html(data.results[i].title)
         var a = $('<a><span class="icon-plus2"></span></a>');
         a.hover(function() {
 
@@ -36,7 +38,8 @@ function searchDiscogs() {
         a.data('year', data.results[i].year);
         a.data('art', data.results[i].thumb);
         a.addClass('addAlbum');    
-        div.append(a);    
+        div.append(a);   
+        div.append(p); 
          $('.search-results').append(div);
       //make them clickable
       //add to database/local library

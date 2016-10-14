@@ -47,6 +47,7 @@ function searchDiscogs() {
 
 //add album to library
 function addAlbum() {
+  $('.search-results').empty()
   $(document).on('click', 'a.addAlbum', function(e) {
      e.preventDefault()
      var link = $(this)
@@ -73,9 +74,9 @@ function addAlbum() {
 
 
 //Search personal Catalog
-function searchLibrary() {
-
-}
+// function searchLibrary() {
+//
+// }
 
 
 

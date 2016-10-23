@@ -33,18 +33,17 @@ header {
 
  }
 
-.search .icon-magnifier {
+.search a.icon-magnifier {
   color: #0e181a;
   font-size: 32px;
   font-weight: 600;
-}
-a {
   text-decoration: none;
   float: right;
   position: absolute;
   left: 950px;
   margin-top: 28px;
 }
+
 .discogs-input::-webkit-input-placeholder {
   font-family: 'Open Sans', 600;
   font-size: 24px;
@@ -90,7 +89,7 @@ margin-left: 35px;
    vertical-align: top;
    font-family: 'Open Sans', sans-serif;
    font-size: 15px;
-   color: #fffaf0;
+   color: #252d2e;
    background-color: #fffaf0;
    border-radius: 3px;
    border: 1px solid #fffaf0;
@@ -115,14 +114,7 @@ margin-left: 35px;
   display: block;
   margin: 0 auto;
   padding: 30px;
-  color:#262e25;
   font-size: 18px;
-}
-.collection div p, .search-results div p {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  color: #f1eada;
 }
 .collection div a, .search-results div a {
   display: block;
@@ -130,20 +122,18 @@ margin-left: 35px;
   clear: right;
   font-size: 20px;
   padding-top: 15px;
-  color: #262e25;
 
 }
 .collection div a:hover, .search-results div a:hover{
   font-weight: 600;
   font-size: 24px;
-  color: #f1eada;
 }
 
 .collection {
   display: block;
   margin-top: 10px;
-  background-color:  #ebf2f5;
-  color: #0e181a;
+  background-color:  #f1eada;
+  color: #252d2e;
 }
 .collection div:hover, .search-results div:hover {
   font-family: "Open Sans", sans-serif;

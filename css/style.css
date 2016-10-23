@@ -29,19 +29,17 @@ header {
   width: 54%;
   margin-top: 25px;
   padding-right: 35px;
-
-
+  display: inline-block;
+  position: relative;
  }
-
-.search a.icon-magnifier {
+.search .icon-magnifier {
   color: #0e181a;
   font-size: 32px;
   font-weight: 600;
-  text-decoration: none;
-  float: right;
   position: absolute;
-  left: 950px;
   margin-top: 28px;
+  right: 10px;
+
 }
 
 .discogs-input::-webkit-input-placeholder {
@@ -76,9 +74,18 @@ color: #f1eada;
 text-align: left;
 margin-left: 35px;
 }
-.icon-plus2{
-  color:#f1eada;
+section a {
+  text-decoration: none;
+  color:#252d2e;
+  vertical-align: baseline;
 }
+.collection {
+  display: block;
+  margin-top: 10px;
+  background-color:  #f1eada;
+  color: #252d2e;
+}
+
 .collection div, .search-results div {
    height: 400px;
    width: 30.5%;
@@ -96,18 +103,13 @@ margin-left: 35px;
    box-shadow: 1px #fffaf0;
    cursor: pointer;
    }
-
-
-
 .collection div img, .search-results div img {
-  height: 170px;
-  width: 170px;
+  height: 210px;
+  width: 210px;
   display: block;
   margin: 0 auto;
   margin-top: 45px;
   clear: right;
-
-
 }
 .collection div p, .search-results div p {
   text-align: center;
@@ -115,25 +117,6 @@ margin-left: 35px;
   margin: 0 auto;
   padding: 30px;
   font-size: 18px;
-}
-.collection div a, .search-results div a {
-  display: block;
-  margin: 0 auto;
-  clear: right;
-  font-size: 20px;
-  padding-top: 15px;
-
-}
-.collection div a:hover, .search-results div a:hover{
-  font-weight: 600;
-  font-size: 24px;
-}
-
-.collection {
-  display: block;
-  margin-top: 10px;
-  background-color:  #f1eada;
-  color: #252d2e;
 }
 .collection div:hover, .search-results div:hover {
   font-family: "Open Sans", sans-serif;

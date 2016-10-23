@@ -25,6 +25,13 @@ header {
 }
 .container {
   max-width: 1400px;
+  margin: 0 auto;
+}
+.one {
+  background-color:#f1eada;
+}
+.two {
+  background-color:
 }
 .search {
   margin: 0 auto;
@@ -84,6 +91,9 @@ section a {
   margin-top: 10px;
   background-color:  #f1eada;
   color: #252d2e;
+}
+.search-results {
+  background-color: #252c2e; 
 }
 
 .collection div, .search-results div {

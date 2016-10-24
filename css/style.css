@@ -151,12 +151,12 @@ margin-left: 35px;
   border: 1px solid #ef5a34;
   box-shadow: 1px;
 }
-@media (max-width: 730px) {
+@media only screen and (max-width: 730px) {
   .collection div, .search-results div {
     width: 45%;
   }
 }
-@media (max-width: 530px) {
+@media only screen and (max-width: 530px) {
   .collection div, .search-results div {
     display: block;
     width: 80%;

@@ -151,12 +151,12 @@ margin-left: 35px;
   border: 1px solid #ef5a34;
   box-shadow: 1px;
 }
-@media only screen and (max-device-width: 730px) {
+@media only screen and (max-width: 730px) {
   .collection div, .search-results div {
     width: 45%;
   }
 }
-@media only screen and (max-device-width: 530px) {
+@media only screen and (max-width: 530px) {
   .collection div, .search-results div {
     display: block;
     width: 80%;
@@ -165,3 +165,16 @@ margin-left: 35px;
     margin-top: 20px;
   }
 }
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .collection div, .search-results div {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  }
+  

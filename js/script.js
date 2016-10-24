@@ -29,10 +29,7 @@ function searchDiscogs() {
         div.html('<img src="' + data.results[i].thumb + '" />');
         p.html(data.results[i].title);
         div.append(p);
-        var a = $('<a><span class="icon-plus2"></span></a>');
-        a.hover(function() {
-
-        })      
+        var a = $('<a><span class="icon-plus2">Add to Library</span></a>');      
         a.attr('href',BASE_URL + 'albums/');   
         a.data('artist', data.results[i].artist);
         a.data('album', data.results[i].title);
@@ -103,15 +100,10 @@ function loadAlbum(album) {
     div.html('<img src="' + album.art + '" />');
     p.html(+ ' ' + album.album + ' ' + album.artist + ' ' + album.year)
     div.append(p);
-    var a = $('<a><span class="icon-trash2"></span></a>');      
+    var a = $('<a><span class="icon-trash2"> </br>Delete</span></a>');      
     a.attr('href',BASE_URL + 'albums/' + album._id);     a.addClass('deleteAlbum');    
     div.append(a);    
      $('.collection').prepend(div);
-  //    div.addClass("cards");
-  //    $('.cards').hover(function() {
-  //    $(this).css({"font-family": "Open Sans, sans-serif", "font-weight": "600", "font-size": "24px", "color": "#f1eada", "background-color": "rgba(239,90,52,0.95)", "border-radius": "3px", "border": "1px solid #ef5a34","box-shadow": "1px", "z-index": "99" });
-  //  });
-    //  console.log(album);
 }
 
 function deleteAlbum() {

@@ -34,12 +34,13 @@ header {
   background-color:#252d2e;
 }
 .search {
-  margin: 0 auto;
   width: 54%;
   margin-top: 25px;
   padding-right: 35px;
   display: inline-block;
   position: relative;
+  margin: 0 auto;
+
  }
 .search .icon-magnifier {
   color: #0e181a;
@@ -48,6 +49,16 @@ header {
   position: absolute;
   margin-top: 28px;
   right: 10px;
+}
+a .icon-plus2 {
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 25px;
+}
+a.icon-trash2 {
+  margin: 0;
+  padding: 0;
 }
 .discogs-input::-webkit-input-placeholder {
   font-family: 'Open Sans', 600;
@@ -81,26 +92,18 @@ color: #f1eada;
 text-align: left;
 margin-left: 35px;
 }
-section a {
-  text-decoration: none;
-  color:#252d2e;
-  vertical-align: baseline;
-}
 .collection {
-  display: block;
   margin-top: 10px;
   background-color:  #f1eada;
   color: #252d2e;
 }
-.search-results {
-  background-color: #252c2e;
-}
-
 .collection div, .search-results div {
+  position: relative;
    height: 400px;
    width: 30.5%;
    display: inline-block;
    margin: 10px;
+   margin-top: 20px;
    text-align: center;
    box-sizing: border-box;
    vertical-align: top;
@@ -109,8 +112,8 @@ section a {
    color: #252d2e;
    background-color: #fffaf0;
    border-radius: 3px;
-   border: 1px solid #fffaf0;
-   box-shadow: 1px #fffaf0;
+   border: 1px solid #e0dacb;
+   border-bottom: 2px solid #e0dacb;
    cursor: pointer;
    }
 .collection div img, .search-results div img {
@@ -125,16 +128,40 @@ section a {
   text-align: center;
   display: block;
   margin: 0 auto;
-  padding: 30px;
+  padding: 15px;
   font-size: 18px;
+}
+.collection div a, .search-results div a {
+  position: absolute;
+  display:block;
+  text-decoration: none;
+  font-size: 18px;
+  color: #252d2e;
+  bottom: 10px;
+  right: 25px;
+  left: 25px;
+
 }
 .collection div:hover, .search-results div:hover {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 24px;
   color: #f1eada;
   background-color: rgba(239,90,52,0.9);
   border-radius: 3px;
   border: 1px solid #ef5a34;
   box-shadow: 1px;
+}
+@media (max-width: 730px) {
+  .collection div, .search-results div {
+    width: 45%;
+  }
+}
+@media (max-width: 530px) {
+  .collection div, .search-results div {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
 }

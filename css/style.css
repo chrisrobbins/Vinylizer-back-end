@@ -34,7 +34,7 @@ header {
   background-color:#252d2e;
 }
 .search {
-  width: 54%;
+  width: 50%;
   margin-top: 25px;
   padding-right: 35px;
   display: inline-block;
@@ -51,12 +51,10 @@ header {
   right: 10px;
 }
 a .icon-plus2 {
-  display: block;
-  position: absolute;
-  margin: 0 auto;
-  bottom: 25px;
+  margin: 0;
+  padding: 0;
 }
-a.icon-trash2 {
+a .icon-trash2 {
   margin: 0;
   padding: 0;
 }
@@ -79,6 +77,7 @@ a.icon-trash2 {
   font-style: italic;
   font-weight: 400;
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 .discogs-form {
   height: 300px;
@@ -177,4 +176,3 @@ margin-left: 35px;
       margin-top: 20px;
     }
   }
-  

@@ -1,11 +1,10 @@
 const mongoose = require('mongoose');
 
 var albumSchema = {
-  album: String,
+  art: String,
   artist: String,
-  year: Number,
-  art: String
-
+  album: String,
+  year: Number
 }
 
 const Album = mongoose.model('Album', albumSchema);

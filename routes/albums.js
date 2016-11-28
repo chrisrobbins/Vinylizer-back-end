@@ -9,12 +9,11 @@ router.get('/', (req, res, next) => {
   // console.log(albums);
   Album.find({}, (err, albums) => {
     if (err) {
-      console.log('hello');
+      // console.log('hello');
       res.status(500).send(err);
-      console.log('hello');
+      // console.log('hello');
     } else {
       res.json(albums);
-      console.log(albums);
     }
   })
 });
